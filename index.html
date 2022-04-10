@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-App </title>
+    <!-- <link rel="stylesheet" href="sty.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #smallbox{   
+            height: 170px;
+            width: 360px;
+            color: red;
+            border: 2px solid red;
+            border-radius: 15px;
+            background-color: aliceblue;
+            margin-left: 440px;
+            padding: 30px 0px 0px 10px;
+            font-size: 40px;
+            display: none;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(160, 53, 53);
+            border: 2px solid red;
+            color: aliceblue;
+            border-radius: 25px;
+            font-size: 20px;  
+        }
+        #child1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .abc{    
+            height: 300px;
+            width: 250px;
+            border: 2px solid red;
+            background-color: rgb(166, 224, 224);
+            border-radius: 11px;
+            margin: 30px;
+            padding: 20px 0px 0px 0px;
+            color: black;
+        }   
+        #delete , #add{
+            width: 40px;
+            height: 40px;
+            color: aliceblue;
+            border-radius: 25px;
+        } 
+    </style>
+</head>
+<body style="text-align: center; font-size: 25px; background-color: rgb(49, 46, 46); color: aliceblue;">
+    <div id="xyz" >
+            <div style="  font-size: 250%; margin-top: 7%;  "><b>Tasks</b> Lists 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i style="color: rgb(27, 131, 145);" class="material-icons" onclick="addpop()">
+                add_circle</i>
+                <span > Add List</span> 
+            </div> 
+        <br> <br>
+        <p id="para" >No items in the Todo List</p>    
+        
+    </div>
+    
+    <div id="smallbox" >
+        <label for="name">Add New List</label> <br> 
+        <input type="text" id="card" value="" placeholder="Add New LIst" style="height: 30px; width: 250px; font-size: 20px;"> <br>
+        <span><button onclick="addlist()">Add</button> &nbsp;&nbsp;&nbsp; 
+        <button onclick="close()">Close</button></span>
+    </div>
+
+    <!--<div id="icon">
+    <button id="delete" ><span class="material-icons">delete</span></button>
+    <button id="add"><span class="material-icons">add_circle</span></button> <hr> -->
+    </div>
+    <div id="child1">
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
